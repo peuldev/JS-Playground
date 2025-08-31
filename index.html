@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JS Playground</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>JS Playground</h1>
+        <span class="hint">Run code with <strong>Ctrl/⌘ + Enter</strong>. Console output appears on the right.</span>
+    </header>
+
+    <div class="wrap">
+        <!-- Left: Editor -->
+        <section class="panel">
+            <header>
+                <h2>Editor <span class="pill">JavaScript</span></h2>
+                <div class="toolbar">
+                    <button id="run">Run ▶</button>
+                    <button id="clear">Clear Output</button>
+                    <button id="reset">Reset Code</button>
+                </div>
+            </header>
+            <textarea id="code" class="editor"></textarea>
+            <div id="result" class="result"></div>
+        </section>
+
+        <!-- Middle: Questions -->
+        <section class="panel">
+            <header>
+                <h2>Practice Questions</h2>
+            </header>
+            <div class="question-list" id="questions"></div>
+        </section>
+
+        <!-- Right: Console Output -->
+        <section class="panel">
+            <header>
+                <h2>Console Output</h2>
+            </header>
+            <pre id="out" class="output"></pre>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
+
